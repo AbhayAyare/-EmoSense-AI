@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EmoSense-AI Live Stream</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 30px;
+        }
+        video {
+            border: 5px solid #4CAF50;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎥 EmoSense-AI: Real-Time Emotion Recognition</h1>
+    <p>Facial + Audio emotion detection from webcam and mic</p>
+    <video autoplay muted playsinline id="videoElement" width="640" height="480"></video>
+    <script>
+        const video = document.getElementById('videoElement');
+        navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+            .then(stream => {
+                video.srcObject = stream;
+            })
+            .catch(err => {
+                console.error("Error accessing media devices.", err);
+            });
+    </script>
+</body>
+</html>

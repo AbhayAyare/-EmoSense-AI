@@ -1,0 +1,21 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Ignore model weights and checkpoints
+*.h5
+*.pt
+
+# Ignore processed data
+data/processed/
+*.npy
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
