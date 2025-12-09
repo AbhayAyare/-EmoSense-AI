@@ -34,7 +34,7 @@
 ---
 
 ## 🗂️ Project Structure
-
+```
 EmoSense-AI/
 ├── app/
 │ ├── templates/
@@ -63,7 +63,7 @@ EmoSense-AI/
 ├── check_labels.py # Dataset label sanity checker
 ├── README.md
 └── requirements.txt
-
+```
 Create and activate virtual environment
 python -m venv venv
 venv\Scripts\activate  # Windows
@@ -89,4 +89,5 @@ RAVDESS / Custom Audio Dataset
 Facial Prediction	Audio Prediction	Final Output
 😐 Neutral	😠 Angry	🟨 Dual Display
 😢 Sad	😢 Sad	✅ Match Detected
+
 
